@@ -8,7 +8,7 @@ class CounterStep extends React.Component {
         super(props)
         this.state = {
             counter: 0,
-            step: 1,
+            step: 5,
         }
     }
     render() {
@@ -20,9 +20,8 @@ class CounterStep extends React.Component {
                         <h2 className='center font-1'>Steps</h2>
                         <div className='flex width-50' >
                             {/* steps buttons */}
-                            {step_Label.map((label) => <button className='bg-nv' key={label} onClick={
-                                (e) => {
-                                    e.target.classList = 'active'
+                            {step_Label.map((label) => <button className={this.state.step === label ? 'active' : 'bg-nv'} key={label} onClick={
+                                () => {
                                     this.setState({
                                         step: label
                                     })
@@ -50,7 +49,7 @@ class CounterStep extends React.Component {
                                     if (label === 'reset') {
                                         this.setState({
                                             counter: 0,
-                                            step: 1
+                                            step: 5
                                         })
                                     }
 
