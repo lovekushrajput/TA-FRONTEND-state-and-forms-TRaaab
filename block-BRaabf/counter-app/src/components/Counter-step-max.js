@@ -8,7 +8,8 @@ class CounterMax extends React.Component {
         super(props)
         this.state = {
             counter: 0,
-            step: 1,
+            step: 5,
+            max: 15
         }
     }
     render() {
@@ -19,9 +20,8 @@ class CounterMax extends React.Component {
                     <article className='flex'>
                         <div>
                             <h2 className='center font-1'>Steps</h2>
-                            {step_Label.map((label) => <button className='bg-nv' key={label} onClick={
-                                (e) => {
-                                    e.target.classList = 'active'
+                            {step_Label.map((label) => <button className={this.state.step === label ? 'active' : 'bg-nv'} key={label} onClick={
+                                () => {
                                     this.setState({
                                         step: label
                                     })
@@ -31,9 +31,8 @@ class CounterMax extends React.Component {
 
                         <div>
                             <h2 className='center font-1'>Max Value</h2>
-                            {max_Label.map((label) => <button className='bg-nv' key={label} onClick={
-                                (e) => {
-                                    e.target.classList = 'active'
+                            {max_Label.map((label) => <button className={this.state.max === label ? 'active' : 'bg-nv'} key={label} onClick={
+                                () => {
                                     this.setState({
                                         max: label
                                     })
@@ -67,8 +66,8 @@ class CounterMax extends React.Component {
                                 if (label === 'reset') {
                                     this.setState({
                                         counter: 0,
-                                        step: 1,
-                                        max: ''
+                                        step: 5,
+                                        max: 15
                                     })
                                 }
 
