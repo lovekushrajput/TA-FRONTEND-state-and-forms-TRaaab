@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("../../public/images/bg-img.png");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* variables */
+img {
+  width: 100%;
+  height: 140px;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+  }
+
+.width-25 {
+  width: 25%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin:  0 auto;
+}
+
+/* custom */
+
+li{
+    color: #caa65e;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.15rem;
+    margin: 3rem 1rem;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.7rem;
+}
+
+li:hover{
+    border: 1px solid #33579B;
+    background-color: #caa65e;
+    color: white;
+    padding: 0.5rem 0.7rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #18251f;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+hr{
+    color: #caa65e;
+    background-color: #caa65e;
+    width: 8%;
+    padding: 0.1rem 0;
+    border: transparent;
+}
+
+article {
+  margin-bottom: 3rem;
+}
+
+figure {
+  width: 43%;
+  font-size: 0;
+  border: 4px solid #caa65e;
+  border-radius: 0.3rem;
+}
+
+.col {
+  margin-left: 1rem;
+}
+.div {
+  border-bottom: 1px dotted #8686ba;
+  align-items: center;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 1.14rem;
+  color: #18251f;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+span {
+  color: #caa65e;
+  font-weight: 600;
+}
+
+p {
+  color: #779297;
+  line-height: 1.4;
+  margin-top: 0.6rem;
+}
