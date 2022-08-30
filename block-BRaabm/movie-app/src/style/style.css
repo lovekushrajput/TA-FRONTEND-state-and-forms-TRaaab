@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+body {
+  background-color: black;
+  color: white;
+  /* position: relative; */
+}
+
+.center{
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  column-gap: 1rem;
+  row-gap: 2.5rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.grid-item {
+  background-color: rgb(26, 26, 26);
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.grid-item img {
+  height: 23rem;
+}
+
+.grid-item:hover .overlay {
+  opacity: 2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+p {
+  color: rgb(169, 168, 168);
+  line-height: 1.4;
+}
+
+
+.overlay {
+  position: absolute;
+  background-color: rgba(10, 39, 91, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  padding: 1rem;
+  border: 1px solid rgb(121, 121, 121);
+}
+
+button {
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  background: linear-gradient(to right,#141517,#5b6d35);
+  z-index: 20;
+  top: 0;
+  width: 45%;
+  right: 0;
+  display: block;
+  position: fixed;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.images img {
+  width: 50%;
+  border: 1px solid white;
+}
+
+span{
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
