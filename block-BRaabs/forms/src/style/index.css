@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* variables */
+.root {
+  ---Primary:rgb(89,191,194);
+  ---Secondary: white;
+  ---text-dark:rgb(40,62,125);
+  ---bg-light:rgb(213,229,229);
+  ---text-light:rgb(110,113,120);
+}
+
+/* general classes */
+.center {
+  text-align: center;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px;
+  color: var(---Secondary);
+  background-color: var(---Primary);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40%)[2];
+      grid-template-columns: repeat(2, 40%);
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.width-48 {
+  width: 100%;
+}
+
+.border-form {
+  border: 4px solid #f09f91;
+  border-radius: 0.3rem;
+}
+
+.justify-space {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error {
+  outline-color: red;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #4a4a4a;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+form {
+  padding: 1rem;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+
+form div {
+  margin-top: 0.3rem;
+}
+
+form div label {
+  color: #4A4A4A;
+  font-weight: 300;
+}
+
+legend {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: #00d1b2;
+}
+
+label {
+  margin-top: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #363636;
+}
+
+span {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+input {
+  outline-color: #8a8aef;
+  padding: 0.6rem;
+  border: 1px solid lightgray;
+}
+
+input::-webkit-input-placeholder {
+  color: lightgray;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+input:-ms-input-placeholder {
+  color: lightgray;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+input::-ms-input-placeholder {
+  color: lightgray;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+input::placeholder {
+  color: lightgray;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=index.css.map */

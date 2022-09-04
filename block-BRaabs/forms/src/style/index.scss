@@ -1,0 +1,86 @@
+@import "reset";
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.width-48 {
+  width: 100%;
+}
+
+.border-form {
+  border: 4px solid #f09f91;
+  border-radius: 0.3rem;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.error {
+  outline-color: red;
+}
+
+h1{
+    font-size: 2rem;
+    color: #4a4a4a;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+form {
+  padding: 1rem;
+  box-shadow: 0 10px 6px -6px #777;
+  div{
+    margin-top: 0.3rem;
+    label{
+        color: #4A4A4A;
+        font-weight: 300;
+    }
+  }
+}
+
+legend{
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #00d1b2;
+}
+
+label {
+  margin-top: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #363636;
+}
+
+span {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+input {
+  outline-color: rgb(138, 138, 239);
+  padding: 0.6rem;
+  border: 1px solid lightgray;
+  &::placeholder {
+    color: lightgray;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+}
