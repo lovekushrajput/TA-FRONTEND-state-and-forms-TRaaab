@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+body {
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bg-disabled {
+  background-color: #eeeded;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+label {
+  margin-top: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  width: 100%;
+}
+
+.multi-form-div {
+  background-color: #daebf6;
+}
+
+.multi-form {
+  width: 30%;
+  margin-top: 1.5rem;
+}
+
+.multi-form input {
+  height: 3.5%;
+  outline-color: royalblue;
+  border: 1px solid gray;
+}
+
+.multi-form label {
+  font-weight: 500;
+}
+
+.multi-form #file {
+  width: 100%;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.form-validation {
+  width: 25%;
+  padding: 1rem 2rem;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+  height: 72vh;
+}
+
+.form-validation h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.form-validation input {
+  padding: 0.4rem 0.2rem;
+}
+
+.form-validation label {
+  color: gray;
+}
+
+.form-validation #btn {
+  margin-top: 1.5rem;
+  width: 324px;
+  text-align: center;
+}
+
+.error {
+  outline-color: red;
+  border: 2px solid red;
+}
+
+span {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+/*# sourceMappingURL=index.css.map */
