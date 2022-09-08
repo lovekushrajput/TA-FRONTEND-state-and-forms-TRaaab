@@ -1,0 +1,166 @@
+@import "reset";
+
+img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.margin-left-1 {
+  margin-left: 1.7rem;
+}
+
+.padding {
+  padding-top: 2.8rem;
+  padding-bottom: 1.8rem;
+}
+
+p {
+  color: grey;
+}
+button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  padding: 0.7rem 1.8rem;
+  border: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.input {
+  margin-top: 0.2rem;
+  padding: 0.4rem;
+  outline-color: rgb(24, 119, 242);
+  &::placeholder {
+    color: grey;
+  }
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+}
+// custom
+.span {
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.2rem;
+  margin-right: 0.6rem;
+  color: gray;
+  background-color: rgb(246, 245, 245);
+}
+
+.bg-blue {
+  background-color: rgb(24, 119, 242);
+  color: white;
+}
+
+.bg-blue-l {
+  background-color: rgba(24, 119, 242, 0.1);
+  color: rgb(24, 119, 242);
+}
+
+section{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 95vh;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 34% 61%;
+  background-color: white;
+  width: 60%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 0;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+}
+
+legend {
+  font-size: 1.4rem;
+  color: navy;
+  margin: 0.6rem 0;
+}
+
+// step-1
+.step1 {
+  flex-wrap: wrap;
+  div {
+    display: inline-block;
+    width: 46%;
+    input {
+      width: 100%;
+    }
+
+    margin-top: 1rem;
+  }
+  margin-bottom: 1rem;
+}
+
+.error {
+  outline-color: red;
+}
+
+// step2
+
+textarea {
+  margin-top: 0.3rem;
+  outline-color: rgb(24, 119, 242);
+  margin-bottom: 1rem;
+}
+
+.pre-btn {
+  background-color: transparent;
+  color: navy;
+  margin-left: 0.7rem;
+}
+
+// stpe2
+.icon {
+  border: 1px solid lightgrey;
+  background-color: rgba(224, 221, 221, 0.5);
+  padding: 1.3rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.6rem;
+  i {
+    font-size: 1.8rem;
+    color: gray;
+  }
+}
+
+.i {
+  border: 1px solid rgb(24, 119, 242);
+  background-color: rgba(24, 119, 242, 0.2);
+  i {
+    color: rgb(24, 119, 242);
+  }
+}
+
+.font-09 {
+  font-size: 0.9rem;
+}
