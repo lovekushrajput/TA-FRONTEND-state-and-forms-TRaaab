@@ -1,0 +1,267 @@
+/* No CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+body {
+  background-color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* general classes */
+.padding-right {
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-space {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.margin-left-1 {
+  margin-left: 1.7rem;
+}
+
+.padding {
+  padding-top: 2.8rem;
+  padding-bottom: 1.8rem;
+}
+
+p {
+  color: grey;
+}
+
+button {
+  background-color: #1877f2;
+  color: white;
+  padding: 0.7rem 1.8rem;
+  border: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.input {
+  margin-top: 0.2rem;
+  padding: 0.4rem;
+  outline-color: #1877f2;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+}
+
+.input::-webkit-input-placeholder {
+  color: grey;
+}
+
+.input:-ms-input-placeholder {
+  color: grey;
+}
+
+.input::-ms-input-placeholder {
+  color: grey;
+}
+
+.input::placeholder {
+  color: grey;
+}
+
+.span {
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.2rem;
+  margin-right: 0.6rem;
+  color: gray;
+  background-color: #f6f5f5;
+}
+
+.bg-blue {
+  background-color: #1877f2;
+  color: white;
+}
+
+.bg-blue-l {
+  background-color: rgba(24, 119, 242, 0.1);
+  color: #1877f2;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95vh;
+}
+
+article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 34% 61%;
+      grid-template-columns: 34% 61%;
+  background-color: white;
+  width: 60%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 0;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+}
+
+legend {
+  font-size: 1.4rem;
+  color: navy;
+  margin: 0.6rem 0;
+}
+
+.step1 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.step1 div {
+  display: inline-block;
+  width: 46%;
+  margin-top: 1rem;
+}
+
+.step1 div input {
+  width: 100%;
+}
+
+.error {
+  outline-color: red;
+}
+
+textarea {
+  margin-top: 0.3rem;
+  outline-color: #1877f2;
+  margin-bottom: 1rem;
+}
+
+.pre-btn {
+  background-color: transparent;
+  color: navy;
+  margin-left: 0.7rem;
+}
+
+.icon {
+  border: 1px solid lightgrey;
+  background-color: rgba(224, 221, 221, 0.5);
+  padding: 1.3rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.6rem;
+}
+
+.icon i {
+  font-size: 1.8rem;
+  color: gray;
+}
+
+.i {
+  border: 1px solid #1877f2;
+  background-color: rgba(24, 119, 242, 0.2);
+}
+
+.i i {
+  color: #1877f2;
+}
+
+.font-09 {
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=index.css.map */
