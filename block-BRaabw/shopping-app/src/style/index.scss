@@ -32,7 +32,6 @@ h1 {
 }
 
 .cart {
-  display: none;
   width: 30%;
   position: absolute;
   right: 0;
@@ -58,7 +57,6 @@ h1 {
   position: absolute;
   top: 0;
   right: 24rem;
-  display: none;
 }
 
 hr {
@@ -96,6 +94,7 @@ ul {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   row-gap: 1rem;
+  margin-top: 7rem;
 }
 
 li {
@@ -117,7 +116,7 @@ li {
   color: white;
 }
 
-.hero {
+.main {
   display: grid;
   grid-template-columns: 15% 80%;
   justify-content: center;
